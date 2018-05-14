@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.herocheer.common.common_app.view.CharListActivity">
+
+
+    <com.aspsine.irecyclerview.IRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:id="@+id/iRecyclerView"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             app:loadMoreEnabled="true"
+                                             app:loadMoreFooterLayout="@layout/layout_irecyclerview_load_more_footer"
+                                             app:refreshEnabled="true"
+                                             app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header"/>
+
+    <com.herocheer.common.common_app.tool.CustomFAB
+        android:id="@+id/fabSearch"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/search"
+        android:tint="@android:color/white"
+        custom:bg_color="@color/light_blue"/>
+
+
+</RelativeLayout>
